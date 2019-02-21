@@ -1,0 +1,825 @@
+
+alex.jouvenot@ASS0576 MINGW64 ~
+$ cd C
+bash: cd: C: No such file or directory
+
+alex.jouvenot@ASS0576 MINGW64 ~
+$ cd C:
+
+alex.jouvenot@ASS0576 MINGW64 /c
+$ cd Users/alex.jouvenot/Do
+Documents/ Downloads/
+
+alex.jouvenot@ASS0576 MINGW64 /c
+$ cd Users/alex.jouvenot/Downloads/classrepos/
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos
+$ mkdir conflict
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos
+$ cd conflict/
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict
+$ git clone git@github.com:githubschool/conflict-practice-alexjouvenot.git
+Cloning into 'conflict-practice-alexjouvenot'...
+remote: Enumerating objects: 148, done.
+remote: Counting objects: 100% (148/148), done.
+remote: Compressing objects: 100% (94/94), done.
+Receiving objects:  68% (101/148), 180.00 KiB | 253.00 KiB/s Receiving objects:  69% (103/148), 180.00 KiB | 253.00 KiB/s Receiving objects:  70% (104/148), 180.00 KiB | 253.00 KiB/s Receiving objects:  71% (106/148), 180.00 KiB | 253.00 KiB/s Receiving objects:  72% (107/148), 180.00 KiB | 253.00 KiB/s Receiving objects:  73% (109/148), 180.00 KiB | 253.00 KiB/s Receiving objects:  74% (110/148), 180.00 KiB | 253.00 KiB/s Receiving objects:  75% (111/148), 180.00 KiB | 253.00 KiB/s Receiving objects:  76% (113/148), 180.00 KiB | 253.00 KiB/s Receiving objects:  77% (114/148), 180.00 KiB | 253.00 KiB/s Receiving objects:  78% (116/148), 180.00 KiB | 253.00 KiB/s Receiving objects:  79% (117/148), 180.00 KiB | 253.00 KiB/s Receiving objects:  80% (119/148), 180.00 KiB | 253.00 KiB/s Receiving objects:  81% (120/148), 180.00 KiB | 253.00 KiB/s Receiving objects:  82% (122/148), 180.00 KiB | 253.00 KiB/s Receiving objects:  83% (123/148), 180.00 KiB | 253.00 KiB/s Receiving objects:  84% (125/148), 180.00 KiB | 253.00 KiB/s Receiving objects:  85% (126/148), 180.00 KiB | 253.00 KiB/s Receiving objects:  86% (128/148), 180.00 KiB | 253.00 KiB/s Receiving objects:  87% (129/148), 180.00 KiB | 253.00 KiB/s Receiving objects:  88% (131/148), 180.00 KiB | 253.00 KiB/s Receiving objects:  89% (132/148), 180.00 KiB | 253.00 KiB/s Receiving objects:  90% (134/148), 180.00 KiB | 253.00 KiB/s remote: Total 148 (delta 44), reused 148 (delta 44), pack-reused 0
+Receiving objects:  91% (135/148), 180.00 KiB | 253.00 KiB/s Receiving objects:  92% (137/148), 180.00 KiB | 253.00 KiB/s Receiving objects:  93% (138/148), 180.00 KiB | 253.00 KiB/s Receiving objects:  94% (140/148), 180.00 KiB | 253.00 KiB/s Receiving objects:  95% (141/148), 180.00 KiB | 253.00 KiB/s Receiving objects:  96% (143/148), 180.00 KiB | 253.00 KiB/s Receiving objects:  97% (144/148), 180.00 KiB | 253.00 KiB/s Receiving objects:  98% (146/148), 180.00 KiB | 253.00 KiB/s Receiving objects:  99% (147/148), 180.00 KiB | 253.00 KiB/s Receiving objects: 100% (148/148), 180.00 KiB | 253.00 KiB/s Receiving objects: 100% (148/148), 435.82 KiB | 471.00 KiB/s, done.
+Resolving deltas: 100% (44/44), done.
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict
+$ cd conflict-practice-alexjouvenot/
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (master)
+$ git branch --all
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/css-changes
+  remotes/origin/manual
+  remotes/origin/master
+  remotes/origin/readme-update
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (master)
+$ git checkout readme-update
+Switched to a new branch 'readme-update'
+Branch 'readme-update' set up to track remote branch 'readme-update' from 'origin'.
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (readme-update)
+$ .atom
+bash: .atom: command not found
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (readme-update)
+$ git status
+On branch readme-update
+Your branch is up to date with 'origin/readme-update'.
+
+nothing to commit, working tree clean
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (readme-update)
+$ git pull
+Already up to date.
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (readme-update)
+$ git merge readme-update
+Already up to date.
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (readme-update)
+$ git diff readme-update master
+diff --git a/README.md b/README.md
+index 9835e3e..feca28a 100644
+--- a/README.md
++++ b/README.md
+@@ -6,7 +6,7 @@
+
+ This playable post is [public domain (CC0)](http://creativecommons.org/publicdomain/zero/1.0).
+
+-This repository also has some baked in merge conflicts for practice.
++This repository is also being used as a part of GitHub training, to practice Git and GitHub.
+
+ Please feel free to use this in your classrooms,
+ make video/picture/text adaptations,
+diff --git a/css/index.css b/css/index.css
+index 4e19e97..b716bf9 100644
+--- a/css/index.css
++++ b/css/index.css
+@@ -15,12 +15,14 @@ body{
+
+ }
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (readme-update)
+$ git checkout -b readme-update1
+Switched to a new branch 'readme-update1'
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (readme-update1)
+$ git merge readme-update1
+Already up to date.
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (readme-update1)
+$ git status
+On branch readme-update1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (readme-update1)
+$ git add README.md
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (readme-update1)
+$ git commit -m README.md
+[readme-update1 529bd9e] README.md
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (readme-update1)
+$ git merge
+FETCH_HEAD             origin/manual
+HEAD                   origin/master
+master                 origin/readme-update
+ORIG_HEAD              readme-update
+origin/css-changes     readme-update1
+origin/HEAD            release
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (readme-update1)
+$ git merge readme-update1
+Already up to date.
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (readme-update1)
+$ git merge readme-update1 master
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (readme-update1|MERGING)
+$ git status
+On branch readme-update1
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+
+        modified:   css/index.css
+        modified:   play/manual/manual.html
+        modified:   play/mini/mini_bored.html
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   README.md
+
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (readme-update1|MERGING)
+$ git add README.md
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (readme-update1|MERGING)
+$ git commit
+[readme-update1 97a1274] Merge branch 'master' into readme-update1
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (readme-update1)
+$ git commit -m "fixed"
+On branch readme-update1
+nothing to commit, working tree clean
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (readme-update1)
+$ git merge readme-update1 master
+Already up to date.
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (readme-update1)
+$ cd ..
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict
+$ cd conflict-practice-alexjouvenot/
+.git/        favicon.png  js/          social/
+.gitignore   index.css    play/        translator/
+css/         index.html   README.md    UNCOPYRIGHT
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict
+$ cd conflict-practice-alexjouvenot/
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (readme-update1)
+$ cd
+.git/        favicon.png  js/          social/
+.gitignore   index.css    play/        translator/
+css/         index.html   README.md    UNCOPYRIGHT
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (readme-update1)
+$ git checkout
+css-changes            origin/HEAD
+FETCH_HEAD             origin/manual
+HEAD                   origin/master
+manual                 origin/readme-update
+master                 readme-update
+ORIG_HEAD              readme-update1
+origin/css-changes     release
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (readme-update1)
+$ git checkout origin/
+origin/css-changes     origin/master
+origin/HEAD            origin/readme-update
+origin/manual
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (readme-update1)
+$ git checkout origin/css-changes
+Note: checking out 'origin/css-changes'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at 6b50ac7 add spacing in url css
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot ((6b50ac7...))
+$ git checkout
+css-changes            origin/HEAD
+FETCH_HEAD             origin/manual
+HEAD                   origin/master
+manual                 origin/readme-update
+master                 readme-update
+ORIG_HEAD              readme-update1
+origin/css-changes     release
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot ((6b50ac7...))
+$ git checkout css-changes
+Switched to a new branch 'css-changes'
+Branch 'css-changes' set up to track remote branch 'css-changes' from 'origin'.
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (css-changes)
+$ git status
+On branch css-changes
+Your branch is up to date with 'origin/css-changes'.
+
+nothing to commit, working tree clean
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (css-changes)
+$ git commit -m "new test"
+On branch css-changes
+Your branch is up to date with 'origin/css-changes'.
+
+nothing to commit, working tree clean
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (css-changes)
+$ git merge css-changes master
+Auto-merging css/index.css
+CONFLICT (content): Merge conflict in css/index.css
+Automatic merge failed; fix conflicts and then commit the result.
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (css-changes|MERGING)
+$ git status
+On branch css-changes
+Your branch is up to date with 'origin/css-changes'.
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+
+        modified:   README.md
+        modified:   play/manual/manual.html
+        modified:   play/mini/mini_bored.html
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   css/index.css
+
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (css-changes|MERGING)
+$ git add css/index.css
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (css-changes|MERGING)
+$ git commit -m "Fixed2"
+[css-changes 8c50184] Fixed2
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (css-changes)
+$ git merge css/index.css master
+merge: css/index.css - not something we can merge
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (css-changes)
+$ git merge master
+Already up to date.
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (css-changes)
+$ git push origin
+css-changes            origin/manual
+FETCH_HEAD             origin/master
+HEAD                   origin/readme-update
+master                 readme-update
+ORIG_HEAD              readme-update1
+origin/css-changes     release
+origin/HEAD
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (css-changes)
+$ git push origin
+css-changes            origin/manual
+FETCH_HEAD             origin/master
+HEAD                   origin/readme-update
+master                 readme-update
+ORIG_HEAD              readme-update1
+origin/css-changes     release
+origin/HEAD
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (css-changes)
+$ git push origin master
+To github.com:githubschool/conflict-practice-alexjouvenot.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'git@github.com:githubschool/conflict-practice-alexjouvenot.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (css-changes)
+$ git merge css-changes master
+Already up to date.
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (css-changes)
+$ git push
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 415 bytes | 207.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:githubschool/conflict-practice-alexjouvenot.git
+   6b50ac7..8c50184  css-changes -> css-changes
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (css-changes)
+$ git checkout manual
+Switched to a new branch 'manual'
+Branch 'manual' set up to track remote branch 'manual' from 'origin'.
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (manual)
+$ git merge manual master
+Auto-merging play/mini/mini_bored.html
+CONFLICT (content): Merge conflict in play/mini/mini_bored.html
+CONFLICT (modify/delete): play/manual/manual.html deleted in HEAD and modified in master. Version master of play/manual/manual.html left in tree.
+Automatic merge failed; fix conflicts and then commit the result.
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (manual|MERGING)
+$ git status
+On branch manual
+Your branch is up to date with 'origin/manual'.
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+
+        modified:   README.md
+        modified:   css/index.css
+
+Unmerged paths:
+  (use "git add/rm <file>..." as appropriate to mark resolution)
+
+        deleted by us:   play/manual/manual.html
+        both modified:   play/mini/mini_bored.html
+
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (manual|MERGING)
+$ git add .
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (manual|MERGING)
+$ git commit -m "blah"
+[manual 43ab694] blah
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (manual)
+$ git push
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 549 bytes | 549.00 KiB/s, done.
+Total 5 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+To github.com:githubschool/conflict-practice-alexjouvenot.git
+   cb8731a..43ab694  manual -> manual
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (manual)
+$ git pull
+remote: Enumerating objects: 16, done.
+remote: Counting objects: 100% (14/14), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 8 (delta 4), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (8/8), done.
+From github.com:githubschool/conflict-practice-alexjouvenot
+   1095c8c..7c0cb3b  master        -> origin/master
+   945ca60..e545dcb  readme-update -> origin/readme-update
+Already up to date.
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict/conflict-practice-alexjouvenot (manual)
+$ cd ..
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/conflict
+$ cd ..
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos
+$ mkdir ghgames
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos
+$ cd ghgames/
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames
+$ git clone git@github.com:githubschool/github-games-alexjouvenot.git
+Cloning into 'github-games-alexjouvenot'...
+remote: Enumerating objects: 86, done.
+remote: Counting objects: 100% (86/86), done.
+remote: Compressing objects: 100% (43/43), done.
+remote: Total 86 (delta 41), reused 86 (delta 41), pack-reused 0
+Receiving objects: 100% (86/86), 65.96 KiB | 281.00 KiB/s, done.
+Resolving deltas: 100% (41/41), done.
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames
+$ cd github-games-alexjouvenot/
+.git/         Gemfile.lock  package.json  texture.jpg
+_config.yml   inde.html     README.md
+Gemfile       LICENSE       stats.js
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames
+$ github-games-alexjouvenot/
+bash: github-games-alexjouvenot/: Is a directory
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames
+$ cd github-games-alexjouvenot/
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot (master)
+$ git lol
+*   a306db2 (HEAD -> master, origin/master, origin/HEAD) Merge pull request #5 from githubtraining/snyk-fix-rvfcev
+|\
+| * e258b92 fix: Gemfile.lock & Gemfile to reduce vulnerabilities
+|/
+| * fabf007 (origin/update-gem) Update ffi
+|/
+* 3e56e37 :arrow_up: nokogiri
+*   73c762c Merge pull request #2 from githubtraining/nokogiri-update
+|\
+| * f924d21 Fix nokogiri via bundle update
+|/
+* fa2f8c1 Remove jshint dev dependency
+| * 25d4e51 (origin/circle-tests) Remove jshint test
+| * bf4292e Update test_verifyurl
+| * 71bedda add tests for circle
+|/
+| * c749b35 (origin/travis-tests) Update test_verifyurl
+| * d698b4a Remove library option
+| * 5c0d951 add tests for travis
+|/
+:...skipping...
+*   a306db2 (HEAD -> master, origin/master, origin/HEAD) Merge pull request #5 from githubtraining/snyk-fix-rvfcev
+|\
+| * e258b92 fix: Gemfile.lock & Gemfile to reduce vulnerabilities
+|/
+| * fabf007 (origin/update-gem) Update ffi
+|/
+* 3e56e37 :arrow_up: nokogiri
+*   73c762c Merge pull request #2 from githubtraining/nokogiri-update
+|\
+| * f924d21 Fix nokogiri via bundle update
+|/
+* fa2f8c1 Remove jshint dev dependency
+| * 25d4e51 (origin/circle-tests) Remove jshint test
+| * bf4292e Update test_verifyurl
+| * 71bedda add tests for circle
+|/
+| * c749b35 (origin/travis-tests) Update test_verifyurl
+| * d698b4a Remove library option
+| * 5c0d951 add tests for travis
+|/
+| * d884d4e (origin/game-instructions) add instructions to pause the game
+| * 6d943fa add goals of the game
+| * fd7882b add instructions for shifting the shape
+| * dcd3fbd add instructions for rotating the shape
+| * b7e5258 add instructions for starting the game
+| * e168a48 add header for instructions
+|/
+* f99c721 rename index.html to inde.html
+* f38cd3c (origin/shape-colors) add config Gemfile and package
+* 1019b33 change stats display color to blue
+| * de4b914 (origin/stats-update) change stats display color to yellow
+|/
+* 44fa091 add base project files
+* cde5538 add license from original project
+* ea054de kicking off the project with a README
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot (master)
+$ git bisect start
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot (master|BISECTING)
+$ git bisect good ea05de
+fatal: Needed a single revision
+Bad rev input: ea05de
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot (master|BISECTING)
+$ git bisect good ea05
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot (master|BISECTING)
+$ git bisect bad HEAD
+Bisecting: 5 revisions left to test after this (roughly 3 steps)
+[f99c7219108337b35abac4e33e0edcb5fb470bdf] rename index.html to inde.html
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot ((f99c721...)|BISECTING)
+$ ls
+_config.yml   inde.html     README.md
+Gemfile       LICENSE       stats.js
+Gemfile.lock  package.json  texture.jpg
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot ((f99c721...)|BISECTING)
+$ git bisect bad
+Bisecting: 2 revisions left to test after this (roughly 1 step)
+[44fa0912e841f6d660ed2170536b4f388c27055a] add base project files
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot ((44fa091...)|BISECTING)
+$ ls
+index.html  LICENSE  README.md  stats.js  texture.jpg
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot ((44fa091...)|BISECTING)
+$ git bisect good
+Bisecting: 0 revisions left to test after this (roughly 1 step)
+[f38cd3c7ca3ddbe2e51dfe76a46331f2acec348a] add config Gemfile and package
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot ((f38cd3c...)|BISECTING)
+$ ls
+_config.yml   index.html    README.md
+Gemfile       LICENSE       stats.js
+Gemfile.lock  package.json  texture.jpg
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot ((f38cd3c...)|BISECTING)
+$ git bisect good
+f99c7219108337b35abac4e33e0edcb5fb470bdf is the first bad commit
+commit f99c7219108337b35abac4e33e0edcb5fb470bdf
+Author: Cynthia Rich <crichID@github.com>
+Date:   Sat Jul 8 10:53:06 2017 -0400
+
+    rename index.html to inde.html
+
+:000000 100644 0000000000000000000000000000000000000000 87e71f899831929cce9656e2057d40e900062726 A   inde.html
+:100644 000000 87e71f899831929cce9656e2057d40e900062726 0000000000000000000000000000000000000000 D   index.html
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot ((f38cd3c...)|BISECTING)
+$ git bisect reset
+Previous HEAD position was f38cd3c add config Gemfile and package
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot (master)
+$ git bisect start HEAD ea054
+Bisecting: 5 revisions left to test after this (roughly 3 steps)
+[f99c7219108337b35abac4e33e0edcb5fb470bdf] rename index.html to inde.html
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot ((f99c721...)|BISECTING)
+$ ^C
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot ((f99c721...)|BISECTING)
+$ git lol
+*   a306db2 (origin/master, origin/HEAD, master, refs/bisect/bad) Merge pull request #5 from githubtraining/snyk-fix-rvfcev
+|\
+| * e258b92 fix: Gemfile.lock & Gemfile to reduce vulnerabilities
+|/
+| * fabf007 (origin/update-gem) Update ffi
+|/
+* 3e56e37 :arrow_up: nokogiri
+*   73c762c Merge pull request #2 from githubtraining/nokogiri-update
+|\
+| * f924d21 Fix nokogiri via bundle update
+|/
+* fa2f8c1 Remove jshint dev dependency
+| * 25d4e51 (origin/circle-tests) Remove jshint test
+| * bf4292e Update test_verifyurl
+| * 71bedda add tests for circle
+|/
+| * c749b35 (origin/travis-tests) Update test_verifyurl
+| * d698b4a Remove library option
+| * 5c0d951 add tests for travis
+|/
+| * d884d4e (origin/game-instructions) add instructions to pause the game
+| * 6d943fa add goals of the game
+| * fd7882b add instructions for shifting the shape
+| * dcd3fbd add instructions for rotating the shape
+| * b7e5258 add instructions for starting the game
+| * e168a48 add header for instructions
+|/
+* f99c721 (HEAD) rename index.html to inde.html
+* f38cd3c (origin/shape-colors) add config Gemfile and package
+* 1019b33 change stats display color to blue
+| * de4b914 (origin/stats-update) change stats display color to yellow
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot ((f99c721...)|BISECTING)
+$ git show f99c721
+commit f99c7219108337b35abac4e33e0edcb5fb470bdf (HEAD)
+Author: Cynthia Rich <crichID@github.com>
+Date:   Sat Jul 8 10:53:06 2017 -0400
+
+    rename index.html to inde.html
+
+diff --git a/index.html b/inde.html
+similarity index 100%
+rename from index.html
+rename to inde.html
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot ((f99c721...)|BISECTING)
+$ git revert f99c721
+[detached HEAD ab6a3fe] Revert "rename index.html to inde.html"
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename inde.html => index.html (100%)
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot ((ab6a3fe...)|BISECTING)
+$ git revert f99c721 "Reverting index.htmnl"
+fatal: bad revision 'Reverting index.htmnl'
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot ((ab6a3fe...)|BISECTING)
+$ git revert f99 "Reverting index.htmnl"
+fatal: bad revision 'f99'
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot ((ab6a3fe...)|BISECTING)
+$ git bisect reset
+Warning: you are leaving 1 commit behind, not connected to
+any of your branches:
+
+  ab6a3fe Revert "rename index.html to inde.html"
+
+If you want to keep it by creating a new branch, this may be a good time
+to do so with:
+
+ git branch <new-branch-name> ab6a3fe
+
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot (master)
+$ git revert f99 "Reverting index.htmnl"
+fatal: bad revision 'f99'
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot (master)
+$ git revert f99c721 "Reverting index.htmnl"
+fatal: bad revision 'Reverting index.htmnl'
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot (master)
+$ git revert
+HEAD                       origin/master
+master                     origin/shape-colors
+origin/circle-tests        origin/stats-update
+origin/game-instructions   origin/travis-tests
+origin/HEAD                origin/update-gem
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot (master)
+$ git revert f99c7 "fix"
+fatal: bad revision 'fix'
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot (master)
+$ git revert master
+HEAD                       origin/master
+master                     origin/shape-colors
+origin/circle-tests        origin/stats-update
+origin/game-instructions   origin/travis-tests
+origin/HEAD                origin/update-gem
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot (master)
+$ git revert master f99
+fatal: bad revision 'f99'
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot (master)
+$ git revert f99c7
+[master 911ddf2] Revert "rename index.html to inde.html"
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename inde.html => index.html (100%)
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot (master)
+$ git revert f99c7 "Fix"
+fatal: bad revision 'Fix'
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot (master)
+$ git revert f99c7
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot (master)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 283 bytes | 283.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:githubschool/github-games-alexjouvenot.git
+   a306db2..911ddf2  master -> master
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot (master)
+$ git checkout -b "text"
+Switched to a new branch 'text'
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot (text)
+$ git status
+On branch text
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot (text)
+$ git add -p
+diff --git a/index.html b/index.html
+index 87e71f8..18687d1 100644
+--- a/index.html
++++ b/index.html
+@@ -76,7 +76,7 @@
+         ucanvas = get('upcoming'),
+         uctx    = ucanvas.getContext('2d'),
+         speed   = { start: 0.6, decrement: 0.005, min: 0.1 }, // how long before piece drops by 1 row (seconds)
+-        nx      = 10, // width of tetris court (in blocks)
++        nx      = 9.7, // width of tetris court (in blocks)
+         ny      = 20, // height of tetris court (in blocks)
+         nu      = 5;  // width/height of upcoming preview (in blocks)
+
+Stage this hunk [y,n,q,a,d,e,?]? ?
+y - stage this hunk
+n - do not stage this hunk
+q - quit; do not stage this hunk or any of the remaining ones
+a - stage this hunk and all later hunks in the file
+d - do not stage this hunk or any of the later hunks in the file
+e - manually edit the current hunk
+? - print help
+@@ -76,7 +76,7 @@
+         ucanvas = get('upcoming'),
+         uctx    = ucanvas.getContext('2d'),
+         speed   = { start: 0.6, decrement: 0.005, min: 0.1 }, // how long before piece drops by 1 row (seconds)
+-        nx      = 10, // width of tetris court (in blocks)
++        nx      = 9.7, // width of tetris court (in blocks)
+         ny      = 20, // height of tetris court (in blocks)
+         nu      = 5;  // width/height of upcoming preview (in blocks)
+
+Stage this hunk [y,n,q,a,d,e,?]? y
+
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot (text)
+$ mkdir images
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot (text)
+$ ls
+_config.yml  Gemfile.lock  index.html  package.json  stats.js
+Gemfile      images/       LICENSE     README.md     texture.jpg
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot (text)
+$ git mv texture.jpg images/texture.jpg
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot (text)
+$ git status
+On branch text
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        renamed:    texture.jpg -> images/texture.jpg
+        modified:   index.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.html
+
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot (text)
+$ git add -p
+diff --git a/index.html b/index.html
+index 18687d1..b427259 100644
+--- a/index.html
++++ b/index.html
+@@ -77,7 +77,7 @@
+         uctx    = ucanvas.getContext('2d'),
+         speed   = { start: 0.6, decrement: 0.005, min: 0.1 }, // how long before piece drops by 1 row (seconds)
+         nx      = 9.7, // width of tetris court (in blocks)
+-        ny      = 20, // height of tetris court (in blocks)
++        ny      = 21, // height of tetris court (in blocks)
+         nu      = 5;  // width/height of upcoming preview (in blocks)
+
+     //-------------------------------------------------------------------------
+Stage this hunk [y,n,q,a,d,e,?]? y
+
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot (text)
+$ git commit -m "change stuff"
+[text b13a085] change stuff
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+ rename texture.jpg => images/texture.jpg (100%)
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot (text)
+$ git checkout
+circle-tests               origin/stats-update
+game-instructions          origin/travis-tests
+HEAD                       origin/update-gem
+master                     shape-colors
+origin/circle-tests        stats-update
+origin/game-instructions   text
+origin/HEAD                travis-tests
+origin/master              update-gem
+origin/shape-colors
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot (text)
+$ git checkout update-gem
+Switched to a new branch 'update-gem'
+Branch 'update-gem' set up to track remote branch 'update-gem' from 'origin'.
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot (update-gem)
+$ cd ..
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames
+$ git merge css-changes master
