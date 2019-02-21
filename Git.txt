@@ -1,4 +1,5 @@
-#See config fsfsdfsdfsdfsdf
+#See config
+
 git config --global --list
 git --version
 
