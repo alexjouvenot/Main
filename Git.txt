@@ -1,5 +1,4 @@
 #See config
-
 git config --global --list
 git --version
 
