@@ -1,0 +1,165 @@
+#See config
+git config --global --list
+git --version
+
+#Login / setup user:
+git config --global user.name "alexjouvenot"
+git config --global user.email "alex.jouvenot@gmail.com"
+
+#to unset:
+git config --unset --global user.email
+
+
+#Extra config
+git config --global core.autocrlf true
+git config --global fetch.prune true
+
+#Add an alias
+git config --global alias.lol "log --oneline --graph --all --decorate"
+
+#Check Usernames/Aliases 
+git config --global --list
+
+#See commits history:
+git log
+git log --oneline
+git log --oneline --graph
+git log --oneline --graph --all --decorate
+
+#list config on computer
+git config --list
+
+#CLone repo from https or SSH
+git clone git@github.com:jouvenot/Hola.git
+
+Then cd to repo 
+
+#list files:
+ls -lr
+
+#Git status
+
+#Turn a folder into a repo
+go to repo
+git init
+
+#Add file to a commit
+Git add
+
+Then 
+#git remote add origin (then add url)
+
+#Create separate branch from the master:
+Git checkout -b
+#Delete local branch
+Git checkout -d
+
+#Cleanup your branches
+git pull --prune (or setup git config --global fetch.prune true) 
+
+#Create commit:
+Git commit -m "this is my commit" filename or -a (all)
+
+#List remotes (Github repositories)
+git remote -v
+
+#Push the changes:
+git push origin master
+
+#get changes
+git pull
+
+#Pull if changes made in Github (or by someone else)
+git pull origin master
+
+#see all branches
+git branch --all
+
+#Switch branch
+git checkout (branch name)
+
+#merge branch
+git merge "branch"
+
+
+#Resolve merge conflict
+- Create branch
+git merge branch master
+git status
+check files and correct
+git status
+git commit
+git push
+
+#git bisect
+
+$ git bisect start HEAD ea054
+Bisecting: 5 revisions left to test after this (roughly 3 steps)
+[f99c7219108337b35abac4e33e0edcb5fb470bdf] rename index.html to inde.html
+
+
+
+or
+
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot (master)
+$ git bisect start
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot (master|BISECTING)
+$ git bisect good ea05de
+fatal: Needed a single revision
+Bad rev input: ea05de
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot (master|BISECTING)
+$ git bisect good ea05
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot (master|BISECTING)
+$ git bisect bad HEAD
+Bisecting: 5 revisions left to test after this (roughly 3 steps)
+[f99c7219108337b35abac4e33e0edcb5fb470bdf] rename index.html to inde.html
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot ((f99c721...)|BISECTING)
+$ ls
+_config.yml   inde.html     README.md
+Gemfile       LICENSE       stats.js
+Gemfile.lock  package.json  texture.jpg
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot ((f99c721...)|BISECTING)
+$ git bisect bad
+Bisecting: 2 revisions left to test after this (roughly 1 step)
+[44fa0912e841f6d660ed2170536b4f388c27055a] add base project files
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot ((44fa091...)|BISECTING)
+$ ls
+index.html  LICENSE  README.md  stats.js  texture.jpg
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot ((44fa091...)|BISECTING)
+$ git bisect good
+Bisecting: 0 revisions left to test after this (roughly 1 step)
+[f38cd3c7ca3ddbe2e51dfe76a46331f2acec348a] add config Gemfile and package
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot ((f38cd3c...)|BISECTING)
+$ ls
+_config.yml   index.html    README.md
+Gemfile       LICENSE       stats.js
+Gemfile.lock  package.json  texture.jpg
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot ((f38cd3c...)|BISECTING)
+$ git bisect good
+f99c7219108337b35abac4e33e0edcb5fb470bdf is the first bad commit
+commit f99c7219108337b35abac4e33e0edcb5fb470bdf
+Author: Cynthia Rich <crichID@github.com>
+Date:   Sat Jul 8 10:53:06 2017 -0400
+
+    rename index.html to inde.html
+
+:000000 100644 0000000000000000000000000000000000000000 87e71f899831929cce9656e2057d40e900062726 A   inde.html
+:100644 000000 87e71f899831929cce9656e2057d40e900062726 0000000000000000000000000000000000000000 D   index.html
+
+alex.jouvenot@ASS0576 MINGW64 ~/Downloads/classrepos/ghgames/github-games-alexjouvenot ((f38cd3c...)|BISECTING)
+$ git bisect reset
+Previous HEAD position was f38cd3c add config Gemfile and package
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+
