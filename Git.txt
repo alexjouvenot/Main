@@ -1,4 +1,4 @@
-#See config 45555453
+#See config 
 git config --global --list
 git --version
 
